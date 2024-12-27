@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply font-sans
+}
+
+    body {
+    @apply bg-[--main-bg-color] text-[--text-light];
+  }
+
+  .h1 {
+    @apply text-[2.8rem] md:text-[6rem] font-bold leading-[120%];
+  }
+  .h2 {
+    @apply text-[2rem] md:text-[5rem] font-bold leading-[120%];
+  }
+  .h3 {
+    @apply text-[4rem] font-bold leading-[120%];
+  }
+  .h4 {
+    @apply text-[3rem] font-bold leading-[120%];
+  }
+  .h5 {
+    @apply text-[2rem] font-bold leading-[120%];
+  }
+  .h6 {
+    @apply text-[1.3rem] md:text-[1.5rem] font-bold leading-[90%];
+  }
+
+  .a {
+    @apply text-[#000000] text-[1.4rem];
+  }
+
+  .p {
+    @apply text-[#000000cc] font-normal max-w-[43rem] leading-[110%];;
+  }
+
+  .p.large {
+    @apply text-[1.5rem];
+  }
+  .p.medium {
+    @apply text-[1.25rem];
+  }
+  .p.regular {
+    @apply text-[1.125rem];
+  }
+  .p.small {
+    @apply text-[1rem];
+  }
+
+  .logos {
+    @apply rounded;
+  }
+  
+  .btn {
+    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base bg-[#101010] text-white rounded-full text-[1.25rem] transition-all duration-500;
+  }
+  .btn:hover{
+    @apply bg-[#fff] text-[#1e1e1e];
+  }
+  .btn_light {
+    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-center text-base bg-white text-[#1e1e1e] rounded-full text-[1.25rem] transition-all duration-500;
+  }
+  .btn_light:hover {
+    @apply bg-[#1e1e1e] text-white;
+  }
+
+  .social_link {
+    @apply hover:text-[#000000cc] text-[1.2rem] md:text-[1.6rem] font-[600] transition-all;
+  }
