@@ -23,7 +23,7 @@ export default function Footer() {
 						{/* icon & text  */}
 						<div className='flex flex-col items-center w-full max-w-[30rem]'>
 							<img src="/logo.png" className='w-full max-w-[64px] h-full max-h-[64px] mb-3' alt="" />
-							<p className={`${archivo.className} p small mb-10 w-[8rem] md:w-full text-center`}>GMW Construct is everywhere to attend you.</p>
+							<p className={`${archivo.className} p small mb-10 w-[8rem] md:w-full text-center`}>GMW Construct est partout pour vous assister.</p>
 						</div>
 						
 						{/* social media  */}
