@@ -10,7 +10,7 @@ export default function Home() {
             <h1 className="h1 !leading-10 pb-2">GMW Construct SRL</h1>
             <p className="text-[1.3rem] text-[#ffffffed] lg:text-[#000] leading-6">Bâtir la confiance, un toit à la fois.</p>
           </div>
-          <a className="btn max-w-60" href="#contactus">CONTACTEZ-NOUS</a>
+          <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ export default function Home() {
               </div> 
               <div className="card">
                 <img className="card-image" src="images/epdm.webp"></img>
-                <h5 className="card-text h 5">Application de EPDM Resitrix</h5>
+                <h5 className="card-text h5">Application de EPDM Resitrix</h5>
                 <p className='card-text p'>Le Resitrix peut être utilisé aussi bien pour les nouvelles constructions que pour les rénovations. Il est également idéal pour les toitures végétales, les toitures de rétention ou les toitures avec panneaux solaires.</p>
               </div> 
             </div>
