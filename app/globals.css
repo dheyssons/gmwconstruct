@@ -79,7 +79,7 @@
   }
 
   .wrapper-image {
-    @apply w-full rounded-lg overflow-hidden flex max-w-72
+    @apply w-full rounded-lg overflow-hidden flex max-w-44 md:max-w-72
   }
 
   .img__zoom{
@@ -87,11 +87,11 @@
   }
 
   .wrapper-card {
-    @apply flex flex-col sm:flex-row gap-4 xl:gap-x-6;
+    @apply flex flex-col sm:flex-row gap-2 md:gap-4 xl:gap-x-6;
   }
 
   .card {
-    @apply flex flex-col gap-y-2 sm:w-56 xl:w-80  max-w-80 bg-gray-100 p-8 rounded-lg;
+    @apply flex flex-col gap-y-2 w-44 sm:w-56 xl:w-80  max-w-80 bg-gray-100 p-8 rounded-lg;
   }
 
   .card-image {
@@ -100,4 +100,8 @@
 
   .line {
     @apply mx-4 w-[75%] md:w-full max-w-[70rem] h-[2px] bg-[#2c2c2c] self-center;
+  }
+
+  .grid-images {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4
   }
