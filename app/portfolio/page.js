@@ -85,7 +85,7 @@ export default function Portfolio() {
                             <div className="wrapper-image bg-[#252b37]"></div>
                         </div>
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="wrapper-image col-span-2">
+                            <div className="wrapper-image col-span-2 row-span-2">
                                 <img className="img__zoom" src="images/portfolio/img (25).jpg"></img>
                             </div>
                             <div className="wrapper-image">

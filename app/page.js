@@ -7,7 +7,7 @@ export default function Home() {
       <div className="banner flex flex-col w-full h-screen items-end relative">
         <div className="mt-44 lg:mt-54 mx-12 lg:mr-12 flex flex-col gap-y-6">
           <div className='flex flex-col lg:gap-y-2'>
-            <h1 className="h1 !leading-10 pb-2">GMW Construct SRL</h1>
+            <h1 className="h1 text-white lg:text-[#141414] !leading-10 pb-2">GMW Construct SRL</h1>
             <p className="text-[1.3rem] text-[#ffffffed] lg:text-[#000] leading-6">Bâtir la confiance, un toit à la fois.</p>
           </div>
           <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>
@@ -38,8 +38,8 @@ export default function Home() {
           <div className='flex flex-col items-center gap-y-16'>
 
             <div className='flex flex-col items-center'>
-              <h5 className="h5">Faites confiance à nos couvreurs professionnels.</h5>
-              <h3 className="h3">Nous réparons et remplaçons tous types de toitures.</h3>  
+              <h3 className="h3 text-center max-w-[25rem] md:max-w-max">Nous réparons et remplaçons tous types de toitures.</h3>  
+              <h5 className="h5 text-center max-w-[20rem] md:max-w-max">Faites confiance à nos couvreurs professionnels.</h5>
             </div>
 
             <div className='wrapper-card mb-20'>

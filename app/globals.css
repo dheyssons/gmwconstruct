@@ -15,19 +15,19 @@
   }
 
   .h1 {
-    @apply text-white lg:text-[#141414] text-[2.8rem] md:text-[5rem] font-bold leading-[120%];
+    @apply lg:text-[#141414] text-[2.8rem] md:text-[5rem] font-bold leading-[120%];
   }
   .h2 {
     @apply text-[#141414] text-[2rem] md:text-[4rem] font-bold leading-[120%];
   }
   .h3 {
-    @apply text-[#141414] text-[1.3rem] lg:text-[3rem] font-bold leading-[120%];
+    @apply text-[#141414] text-[1.5rem] lg:text-[3rem] font-bold leading-[120%];
   }
   .h4 {
     @apply text-[#141414] text-[2rem] font-bold leading-[120%];
   }
   .h5 {
-    @apply text-[#141414] text-[1.1rem] lg:text-[1.5rem] font-bold leading-[120%];
+    @apply text-[#141414] text-[1rem] lg:text-[1.5rem] font-bold leading-[120%];
   }
   .h6 {
     @apply text-[#141414] text-[1.1rem] md:text-[1.2rem] font-bold leading-[90%];
