@@ -7,7 +7,7 @@ export default function Home() {
       <div className="banner flex flex-col w-full h-screen items-end relative">
         <div className="mt-44 lg:mt-54 mx-12 lg:mr-12 flex flex-col gap-y-6">
           <div className='flex flex-col lg:gap-y-2'>
-            <h1 className="h1 text-white lg:text-[#141414] !leading-10 pb-2">GMW Construct SRL</h1>
+            <h1 className="h1 text-white lg:text-[#141414] !leading-10 pb-2">GMW Construct</h1>
             <p className="text-[1.3rem] text-[#ffffffed] lg:text-[#000] leading-6">Bâtir la confiance, un toit à la fois.</p>
           </div>
           <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>

@@ -11,7 +11,7 @@
   }
 
   .banner {
-    @apply bg-[url('../public/home_dark.png')] lg:bg-[url('../public/home.png')] bg-cover bg-no-repeat 
+    @apply bg-[url('../public/home_dark.png')] lg:bg-[url('../public/home.webp')] bg-cover bg-no-repeat 
   }
 
   .h1 {
