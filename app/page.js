@@ -43,7 +43,7 @@ export default function Home() {
 
     document.querySelectorAll('input').forEach(element => element.value = "")
     if (!emptyValues && validEmail) {
-      emailJS.send(SERVICEID, TEMPLATEID, templateParams, PUBLICKEY)
+      emailJS.send("service_ys5fnbq", "template_3she3x8", templateParams, "TZPoFP8sOe4vVKffU")
       .then((res) => {
         alert("email enviado", res.status, res.text)
       })
