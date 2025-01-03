@@ -132,7 +132,7 @@ export default function Header() {
           <a href="/portfolio" className="text-md/6 font-semibold text-gray-900">
             Notre travail
           </a>
-          <a href="#" className="text-md/6 font-semibold text-gray-900">
+          <a href="contact" className="text-md/6 font-semibold text-gray-900">
             Contact
           </a>
           {/* <a href="#" className="text-md/6 font-semibold text-gray-900">

@@ -1,12 +1,12 @@
 export default function Portfolio() {
     return (
         <section>
-            <div className="container mx-auto flex flex-col items-center gap-y-20">
+            <div className="container mx-auto flex flex-col items-center gap-y-10">
                 <h1 className="h1 mt-40">Notre travail</h1>
 
                 <div className="flex flex-col gap-y-10">
                     {/* <h3 className="h3">Telhados residenciais</h3> */}
-                    <div className="flex flex-col gap-y-32">
+                    <div className="flex flex-col gap-y-24">
                         <div className="grid-images">
                             <div className="wrapper-image">
                                 <img className="img__zoom" src="images/portfolio/img (1)-min.jpg"></img>
@@ -84,17 +84,17 @@ export default function Portfolio() {
                             </div>
                             <div className="wrapper-image bg-[#252b37]"></div>
                         </div>
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="wrapper-image col-span-2 row-span-2">
-                                <img className="img__zoom" src="images/portfolio/img (25)-min.jpg"></img>
+                        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                            <div className="wrapper-image lg:col-span-2 !max-w-[22rem] lg:!max-w-[38rem] lg:!max-h-[30rem]">
+                                <img className="img__zoom w-full" src="images/portfolio/img (25)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image">
+                            <div className="wrapper-image lg:col-span-2 !max-w-[22rem] lg:!max-w-[38rem] lg:!max-h-[30rem]">
                                 <img className="img__zoom" src="images/portfolio/img (26)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image">
+                            <div className="wrapper-image lg:col-span-2 !max-w-[22rem] lg:!max-w-[38rem] lg:!max-h-[30rem]">
                                 <img className="img__zoom" src="images/portfolio/img (27)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image">
+                            <div className="wrapper-image lg:col-span-2 !max-w-[22rem] lg:!max-w-[38rem] lg:!max-h-[30rem]">
                                 <img className="img__zoom" src="images/portfolio/img (28)-min.jpg"></img>
                             </div>
                         </div>
