@@ -7,6 +7,12 @@ import emailJS from '@emailjs/browser'
 
 import { useState } from 'react';
 
+import { motion } from 'framer-motion';
+import { transition1 } from '@/public/transitions/transition1';
+import { upward } from '@/public/variants/upward';
+import { righttoleft } from '@/public/variants/righttoleft';
+import { lefttoright } from '@/public/variants/lefttoright';
+
 export default function Home() {
 
   const [form, setForm] = useState({
@@ -55,10 +61,17 @@ export default function Home() {
       <div className="banner flex flex-col w-full h-screen items-end relative">
         <div className="mt-44 lg:mt-54 mx-12 lg:mr-12 flex flex-col gap-y-6">
           <div className='flex flex-col lg:gap-y-2'>
-            <h1 className="h1 text-white lg:text-[#141414] !leading-10 pb-2">GMW Construct</h1>
-            <p className="text-[1.3rem] text-[#ffffffed] lg:text-[#000] leading-6">Bâtir la confiance, un toit à la fois.</p>
+            {/* TITLE */}
+            <div className=''>
+              <motion.h1
+              variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1}
+              className="h1 text-white lg:text-[#141414] !leading-10 pb-2">GMW Construct</motion.h1>
+            </div>
+            <div className=''>
+              <motion.p variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className="text-[1.3rem] text-[#ffffffed] lg:text-[#000] leading-6">Bâtir la confiance, un toit à la fois.</motion.p>
+            </div>
           </div>
-          <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>
+          <motion.a variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</motion.a>
         </div>
       </div>
 
@@ -67,9 +80,11 @@ export default function Home() {
         <div className='container mx-auto flex flex-col items-center gap-y-1'>
           <div className='flex flex-row items-center gap-20'>
             {/* image */}
-            <img className='max-w-[36rem] rounded-lg hidden md:flex' src='images/fixroof.jpg'></img>
+            <motion.img variants={lefttoright} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='max-w-[36rem] rounded-lg hidden md:flex' src='images/fixroof.jpg'></motion.img>
             {/* texts */}
-            <div className='flex flex-col gap-y-4'>
+            <motion.div
+            variants={righttoleft} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1}
+            className='flex flex-col gap-y-4'>
               <div className='flex flex-col gap-y-2'>
                 <h3 className='h3'>À propos de nous</h3>
                 <p className='p md:large w-[18rem] md:w-[20rem] lg:w-[32rem]'>GMW Construct SRL, votre partenaire de confiance en solutions de toiture. Forts de plusieurs années d'expérience dans l'industrie, nous nous spécialisons dans la fourniture de services de toiture de haute qualité, conçus pour protéger votre propriété et en améliorer la valeur. Des projets résidentiels aux projets commerciaux, nous offrons un savoir-faire et un professionnalisme dans chaque travail que nous entreprenons.</p>
@@ -77,7 +92,7 @@ export default function Home() {
               {/* <div className='flex flex-col items-center gap-y-2'>
                 <p className='p text-[1rem] w-[32rem]'>At GMW Construct SRL, our mission is to build durable and reliable roofs while establishing long-lasting relationships with our clients. We believe in combining cutting-edge technology with superior materials to ensure that every roof we construct stands the test of time. Your satisfaction is our top priority.</p>
               </div> */}
-            </div>
+            </motion.div>
           </div>
         </div>
         {/* DETAILS */}
