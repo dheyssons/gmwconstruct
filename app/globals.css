@@ -77,9 +77,16 @@
   .social_link {
     @apply hover:text-[#000000cc] text-[1rem] md:text-[1.2rem] font-[600] transition-all duration-500;
   }
+  .grid-images {
+    @apply flex flex-row flex-wrap gap-4 justify-center;
+  }
 
   .wrapper-image {
-    @apply w-full rounded-lg overflow-hidden flex max-w-44 md:max-w-72
+    @apply flex flex-row flex-wrap rounded-lg overflow-hidden;
+  }
+
+  .wrapper-image img {
+    @apply w-full max-w-80
   }
 
   .img__zoom{
@@ -87,21 +94,19 @@
   }
 
   .wrapper-card {
-    @apply flex flex-col sm:flex-row gap-2 md:gap-4 xl:gap-x-6;
+    @apply flex flex-row flex-wrap justify-center sm:flex-row gap-4 xl:gap-x-6;
   }
 
   .card {
-    @apply flex flex-col gap-y-2 w-44 sm:w-56 xl:w-80  max-w-80 bg-gray-100 p-8 rounded-lg;
+    @apply flex flex-col max-w-96 gap-y-2 bg-gray-100 p-8 rounded-lg;
   }
 
   .card-image {
-    @apply max-w-60 max-h-44 h-full rounded-md object-cover;
+    @apply w-full max-w-80 h-full max-h-80 rounded-md object-cover;
   }
 
   .line {
     @apply mx-4 w-[75%] md:w-full max-w-[70rem] h-[2px] bg-[#2c2c2c] self-center;
   }
 
-  .grid-images {
-    @apply grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4
-  }
+  

@@ -59,20 +59,21 @@ export default function Home() {
   return (
     <section className="section flex flex-col gap-y-10 lg:gap-y-20">
       <div className="banner flex flex-col w-full h-screen items-end relative">
-        <div className="mt-44 lg:mt-54 mx-12 lg:mr-12 flex flex-col gap-y-6">
+        {/* title */}
+        <motion.div
+        variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1}
+        className="mt-44 lg:mt-54 mx-12 lg:mr-12 flex flex-col gap-y-6">
           <div className='flex flex-col lg:gap-y-2'>
             {/* TITLE */}
             <div className=''>
-              <motion.h1
-              variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1}
-              className="h1 text-white lg:text-[#141414] !leading-10 pb-2">GMW Construct</motion.h1>
+              <h1 className="h1 text-white lg:text-[#141414] !leading-10 pb-2">GMW Construct</h1>
             </div>
             <div className=''>
-              <motion.p variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className="text-[1.3rem] text-[#ffffffed] lg:text-[#000] leading-6">Bâtir la confiance, un toit à la fois.</motion.p>
+              <p className="text-[1.3rem] text-[#ffffffed] lg:text-[#000] leading-6">Bâtir la confiance, un toit à la fois.</p>
             </div>
           </div>
-          <motion.a variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</motion.a>
-        </div>
+          <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>
+        </motion.div>
       </div>
 
       <div className='flex flex-col gap-y-20 py-8'>
@@ -125,6 +126,11 @@ export default function Home() {
           </div>
 
         </div>
+
+        {/* OUR SERVICES
+        <div className='container mx-auto flex flex-col items-center gap-y-8'>
+          <h3 className='h3'>Nos </h3>
+        </div> */}
 
         {/* CONTACT US */}
         <div id='contactus' className='container mx-auto flex flex-col items-center gap-y-10'>

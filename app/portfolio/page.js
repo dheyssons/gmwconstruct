@@ -14,17 +14,15 @@ export default function Portfolio() {
                             <div className="wrapper-image">
                                 <img className="img__zoom" src="images/portfolio/img (2)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image">
+                            {/* <div className="wrapper-image">
                                 <img className="img__zoom" src="images/portfolio/img (3)-min.jpg"></img>
-                            </div>
+                            </div> */}
                             <div className="wrapper-image">
                                 <img className="img__zoom" src="images/portfolio/img (4)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image col-span-2 !max-w-[23rem] md:!max-w-[40rem]">
-                                <img className="img__zoom w-full" src="images/portfolio/img (5)-min.jpg"></img>
+                            <div className="wrapper-image">
+                                <img className="img__zoom" src="images/portfolio/img (5)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image !hidden md:!flex bg-[#252b37]"></div>
-                            <div className="wrapper-image !hidden md:!flex bg-[#252b37]"></div>
                         </div>
                         <div className="grid-images">
                             <div className="wrapper-image">
@@ -82,23 +80,22 @@ export default function Portfolio() {
                             <div className="wrapper-image">
                                 <img className="img__zoom" src="images/portfolio/img (23)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image bg-[#252b37]"></div>
-                        </div>
-                        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-                            <div className="wrapper-image lg:col-span-2 !max-w-[22rem] lg:!max-w-[38rem] lg:!max-h-[30rem]">
-                                <img className="img__zoom w-full" src="images/portfolio/img (25)-min.jpg"></img>
+                            <div className="wrapper-image w-[20rem] bg-[#252b37]">
                             </div>
-                            <div className="wrapper-image lg:col-span-2 !max-w-[22rem] lg:!max-w-[38rem] lg:!max-h-[30rem]">
+                        </div>
+                        <div className="grid-images">
+                            <div className="wrapper-image">
+                                <img className="img__zoom" src="images/portfolio/img (25)-min.jpg"></img>
+                            </div>
+                            <div className="wrapper-image">
                                 <img className="img__zoom" src="images/portfolio/img (26)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image lg:col-span-2 !max-w-[22rem] lg:!max-w-[38rem] lg:!max-h-[30rem]">
+                            <div className="wrapper-image">
                                 <img className="img__zoom" src="images/portfolio/img (27)-min.jpg"></img>
                             </div>
-                            <div className="wrapper-image lg:col-span-2 !max-w-[22rem] lg:!max-w-[38rem] lg:!max-h-[30rem]">
+                            <div className="wrapper-image">
                                 <img className="img__zoom" src="images/portfolio/img (28)-min.jpg"></img>
                             </div>
-                        </div>
-                        <div className="grid grid-cols-4 gap-4">
                         </div>
                     </div>
                 </div>
