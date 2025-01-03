@@ -15,7 +15,7 @@ export default function Footer() {
 						<a className={`${archivo.className} p medium text-[#080808] font-[600] leading-[1] after:content-[''] after:w-[3rem] after:mt-1 after:h-[2px] after:bg-[#ff0000] after:block`}>Menu</a>
 						<a href='/' className={`${archivo.className} p hover:text-[#000000a1] transition-all`}> Accueil </a>
 						<a href='/portfolio' className={`${archivo.className} p hover:text-[#000000a1] transition-all`}> Notre travail </a>
-						<a href='/about' className={`${archivo.className} p hover:text-[#000000a1] transition-all`}> Contact </a>
+						{/* <a href='/about' className={`${archivo.className} p hover:text-[#000000a1] transition-all`}> Contact </a> */}
 						{/* <a href='/contact' className={`${archivo.className} p hover:text-[#000000a1] transition-all`}> About </a> */}
 					</div>
 

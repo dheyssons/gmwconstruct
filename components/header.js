@@ -132,9 +132,9 @@ export default function Header() {
           <a href="/portfolio" className="text-md/6 font-semibold text-gray-900">
             Notre travail
           </a>
-          <a href="contact" className="text-md/6 font-semibold text-gray-900">
+          {/* <a href="contact" className="text-md/6 font-semibold text-gray-900">
             Contact
-          </a>
+          </a> */}
           {/* <a href="#" className="text-md/6 font-semibold text-gray-900">
             À propos de nous
            </a> */}
@@ -191,12 +191,12 @@ export default function Header() {
                 >
                   Notre Travail
                 </a>
-                <a
+                {/* <a
                   href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Contact
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
