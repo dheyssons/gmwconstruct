@@ -29,12 +29,12 @@ const archivo = localFont({
 
 export const metadata = {
   title: "GMW Construct SRL",
-  description: "Roof construction and renovations",
+  description: "Construction et rénovations de toitures.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="scroll-smooth">
       <body className={`${archivo.variable} antialiased`}>
         <Header></Header>
         {children}

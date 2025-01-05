@@ -22,6 +22,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
+import Link from 'next/link'
 
 import {ImInstagram, ImWhatsapp} from 'react-icons/im'
 
@@ -49,7 +50,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-      <header className="z-10 fixed w-full bg-black lg:bg-transparent">
+      <header className="z-10 fixed w-full bg-black lg:bg-white">
       <nav aria-label="Global" className="flex flex-row items-center justify-around">
         <div className="max-w-max lg:flex-1 flex flex-row items-center gap-x-4 my-2">
           <a href="/" className="">
@@ -83,10 +84,10 @@ export default function Header() {
           <a href="/" className="text-md/6 font-semibold text-gray-900">
             Accueil
           </a>
-
+          
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900">
-            Pourquoi nous
+            Pourquoi nous?
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
             </PopoverButton>
 
@@ -129,6 +130,10 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
+          <Link href="#services" className="text-md/6 font-semibold text-gray-900">
+            Nos services
+          </Link>
+
           <a href="/portfolio" className="text-md/6 font-semibold text-gray-900">
             Notre travail
           </a>
@@ -165,11 +170,15 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <a href="/" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                  Home
+                  Accueil
                 </a>
+                <Link onClick={() => setMobileMenuOpen(false)} href="#services" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                  Nos services
+                </Link>
+
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Why us
+                    Pourquoi nous?
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
