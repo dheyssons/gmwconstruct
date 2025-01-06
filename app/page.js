@@ -169,7 +169,6 @@ export default function Home() {
             </div>
             {/* Charpente */}
             <div className='card-services'>
-              <img src='images/services/charpenter.webp'></img>
               {/* text */}
               <div className='flex flex-col gap-y-8 justify-around'>
                 {/* title */}
@@ -197,8 +196,10 @@ export default function Home() {
                         </div>
                         <p className='p small md:regular md:p'>Apporter une base esthétique : Les charpentes apparentes ajoutent souvent du caractère et une touche authentique aux espaces intérieurs.</p>
                       </li>
-                    </div>
+                </div>
               </div>
+              <img src='images/services/charpenter.webp'></img>
+
             </div>
             {/* Couverture */}
             <div className='card-services'>
@@ -235,7 +236,6 @@ export default function Home() {
             </div>
             {/* Plateforme */}
             <div className='card-services'>
-              <img src='images/services/plateforme.webp'></img>
               {/* text */}
               <div className='flex flex-col gap-y-8 justify-around'>
                 {/* title */}
@@ -265,6 +265,8 @@ export default function Home() {
                       </li>
                     </div>
               </div>
+              <img src='images/services/plateforme.webp'></img>
+
             </div>
             {/* renovation */}
             <div className='card-services'>
@@ -299,7 +301,6 @@ export default function Home() {
             </div>
             {/* zinguerie */}
             <div className='card-services'>
-              <img src='images/services/zinguerie.webp'></img>
               <div className='flex flex-col gap-y-8 justify-around'>
                 <div>
                   <h4 className='h4'>Zinguerie</h4>
@@ -327,6 +328,7 @@ export default function Home() {
                       </li>
                     </div>
               </div>
+              <img src='images/services/zinguerie.webp'></img>
             </div>
           </div>
         </div>
