@@ -60,18 +60,18 @@ export default function Home() {
 
   return (
     <section className="section flex flex-col gap-y-10 lg:gap-y-20">
-      <div className="banner flex flex-col w-full h-screen items-end relative">
+      <div className="banner flex flex-col w-full h-screen items-start relative">
         {/* title */}
         <motion.div
         variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1}
-        className="mt-44 lg:mt-54 mx-12 lg:mr-12 flex flex-col gap-y-6">
+        className="mt-44 lg:mt-60 mx-12 lg:ml-24 flex flex-col gap-y-6">
           <div className='flex flex-col lg:gap-y-2'>
             {/* TITLE */}
             <div className=''>
-              <h1 className="h1 text-white lg:text-[#141414] !leading-10 pb-2">GMW Construct</h1>
+              <h1 className="h1 text-white lg:text-[#ffffff] !leading-10 pb-2">GMW Construct</h1>
             </div>
             <div className=''>
-              <p className="text-[1.3rem] text-[#ffffffed] lg:text-[#000] leading-6">Bâtir la confiance, un toit à la fois.</p>
+              <p className="text-[1.3rem] text-[#ffffffed] lg:text-[#ffffff] leading-6">Bâtir la confiance, un toit à la fois.</p>
             </div>
           </div>
           <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>
@@ -131,7 +131,7 @@ export default function Home() {
 
         {/* OUR SERVICES */}
         <div id='services' className='container mx-auto flex flex-col items-center gap-y-20'>
-          <h2 className='h2'>Nos services</h2>
+          <h2 className='h1'>Nos services</h2>
 
           <div className='wrapper-services'>
             {/* bardage */}
@@ -148,19 +148,19 @@ export default function Home() {
                     <div className='wrapper-benefits'>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Durabilité: Des matériaux de haute qualité tels que le bois, l'aluminium, le vinyle ou le fibrociment assurent une résistance et une longue durée de vie.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Isolation thermique et acoustique : Améliorez l'efficacité énergétique de votre logement et réduisez les bruits extérieurs.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Personnalisation : Disponible dans une large gamme de styles, de couleurs et de finitions, le bardage s'adapte à tous les types de constructions.</p>
                       </li>
@@ -180,19 +180,19 @@ export default function Home() {
                 <div className='wrapper-benefits'>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Soutenir le toit : Elle assure la stabilité et la répartition uniforme des charges, comme la neige, le vent ou la pluie.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Protéger le bâtiment : En garantissant un appui solide pour la couverture, elle préserve l’intégrité de la construction face aux éléments extérieurs.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Apporter une base esthétique : Les charpentes apparentes ajoutent souvent du caractère et une touche authentique aux espaces intérieurs.</p>
                       </li>
@@ -215,19 +215,19 @@ export default function Home() {
                 <div className='wrapper-benefits'>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Protéger contre les éléments : Pluie, neige, vent, soleil ou grêle.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Isoler thermiquement : Réduire les pertes de chaleur en hiver et limiter la chaleur en été.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Donner du style : Offrir une finition esthétique adaptée au style architectural de votre bâtiment.</p>
                       </li>
@@ -247,19 +247,19 @@ export default function Home() {
                 <div className='wrapper-benefits'>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Esthétique moderne : Les toits plats s’intègrent parfaitement aux designs architecturaux contemporains.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Espace exploitable : Transformez votre toit en terrasse, jardin suspendu ou zone technique pour panneaux solaires.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Polyvalence : Adaptable aux constructions résidentielles, commerciales ou industrielles.</p>
                       </li>
@@ -280,19 +280,19 @@ export default function Home() {
                 <div className='wrapper-benefits'>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Réparation des dégâts : Protégez votre bâtiment des dommages causés par le temps, les intempéries ou l'usure.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Modernisation : Apportez une touche contemporaine à votre espace en améliorant les matériaux et les finitions.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Valorisation immobilière : Augmentez la valeur de votre propriété grâce à des rénovations bien planifiées.</p>
                       </li>
@@ -310,19 +310,19 @@ export default function Home() {
                 <div className='wrapper-benefits'>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Imperméabilisation : empêche les fuites dans les toits et les murs.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Drainage efficace : l'eau de pluie est évacuée en toute sécurité, ce qui permet d'éviter les dommages structurels.</p>
                       </li>
                       <li className='benefits'>
                         <div>
-                          <FaRegCheckCircle className='size-7' />
+                          <FaRegCheckCircle className='opacity-90 size-7' />
                         </div>
                         <p className='p small md:regular md:p'>Finition esthétique : contribue à l'aspect général du bâtiment, en particulier dans les constructions plus traditionnelles ou architecturales.</p>
                       </li>
