@@ -65,14 +65,16 @@ export default function Home() {
     <section className="section flex flex-col gap-y-10 lg:gap-y-20">
       <div className="banner flex flex-col w-full h-screen items-start relative">
         {/* title */}
-        <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1_s} className="mt-44 lg:mt-60 mx-12 lg:ml-24 flex flex-col gap-y-6">
-          <div className='flex flex-col lg:gap-y-2'>
+        <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1_s} className="mt-44 lg:mt-52 mx-12 lg:mx-0 flex flex-col gap-y-12 lg:flex-row w-full justify-around">
+          <div className='flex flex-col lg:gap-y-2 mr-40'>
             {/* TITLE */}
               <motion.h1 variants={item} className="h1 drop-shadow-2xl text-white lg:text-[#ffffff] !leading-10 pb-2">GMW Construct</motion.h1>
               <motion.p variants={item} className="text-[1.3rem] drop-shadow-2xl text-[#ffffffed] lg:text-[#ffffff] leading-6">Bâtir la confiance, un toit à la fois.</motion.p>
           </div>
-          <motion.p className='p text-[1.3rem] drop-shadow-2xl' variants={item}>Devis gratuit</motion.p>
-          <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>
+          <div className='flex flex-col gap-y-2'>
+           <motion.h3 className='h3 drop-shadow-2xl !text-white uppercase' variants={item}>Devis gratuit</motion.h3>
+            <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>
+          </div>
         </motion.div>
       </div>
 
