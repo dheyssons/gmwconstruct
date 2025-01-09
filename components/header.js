@@ -22,6 +22,8 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
+import { motion } from 'framer-motion';
+
 import Link from 'next/link'
 
 import {ImInstagram, ImWhatsapp} from 'react-icons/im'
@@ -34,6 +36,11 @@ import { BiCheckShield } from "react-icons/bi";
 import { MdOutlineWorkspacePremium } from "react-icons/md";
 //CUSTOMER SERVICE
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, ArrowRightStartOnRectangleIcon } from '@heroicons/react/20/solid'
+import { upward } from '@/public/variants/upward';
+import { transition1 } from '@/public/transitions/transition1';
+import { dropdown } from '@/public/variants/dropdown';
+import { transition1_s } from '@/public/transitions/transition1_s';
+
 
 const services = [
   { name: 'Assurance', description: "We offer a 10-year warranty on our work", href: '#', icon: AiOutlineFileDone },
@@ -43,7 +50,7 @@ const services = [
 ]
 const callsToAction = [
   { name: 'Visit Our Instagram', href: 'https://www.instagram.com/gmwconstructsrl/', icon: ArrowRightStartOnRectangleIcon },
-  { name: 'Get An Estimate', href: 'https://api.whatsapp.com/send?phone=32471555540', icon: ImWhatsapp },
+  { name: 'Get Free An Estimate', href: 'https://api.whatsapp.com/send?phone=32471555540', icon: ImWhatsapp },
 ]
 
 export default function Header() {
@@ -52,19 +59,21 @@ export default function Header() {
     return (
       <header className="z-10 fixed w-full bg-black lg:bg-white">
       <nav aria-label="Global" className="flex flex-row items-center justify-around">
-        <div className="max-w-max lg:flex-1 flex flex-row items-center gap-x-4 my-2">
-          <a href="/" className="">
+        <motion.div variants={dropdown} initial="variantInit" whileInView="variantAnim" transition={transition1_s} className="max-w-max lg:flex-1 flex flex-row items-center gap-x-4 my-2">
+          {/* LOGO */}
+          <motion.a variants={dropdown} href="/" className="">
             <img alt="" src="logo.png" className="h-16 w-auto"/>
-          </a>
-          <div className='flex flex-col'>
+          </motion.a>
+          {/* INFO */}
+          <motion.div variants={dropdown} className='flex flex-col'>
             <p className='text-[#ffffffe1] lg:text-black p small'>TVA BE 1003.984.048</p>
             <p className='text-[#ffffffe1] lg:text-black p small hidden lg:flex'>Lindestraat 42 Sint-Genesius-Rode 1640</p>
             <div className='flex flex-row gap-x-1 lg:hidden'>
               <PhoneIcon className='size-5 text-[#ffffff]'/>
               <p className='text-[#ffffffe1] lg:text-black p small'> 471 55 55 40</p>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -83,9 +92,9 @@ export default function Header() {
 
           <a href="/" className="text-md/6 font-semibold text-gray-900">
             Accueil
-          </a>
+          </  a>
           
-          <Popover className="relative">
+          < Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900">
             Pourquoi nous?
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />

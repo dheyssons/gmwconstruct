@@ -24,7 +24,7 @@
     @apply text-[#141414] text-[1.5rem] lg:text-[3rem] font-bold leading-[120%];
   }
   .h4 {
-    @apply text-[#141414] text-[2rem] font-bold leading-[120%];
+    @apply text-[#141414] text-[2rem] md:text-[3rem] font-bold leading-[120%];
   }
   .h5 {
     @apply text-[#141414] text-[1rem] lg:text-[1.5rem] font-bold leading-[120%];
@@ -67,6 +67,12 @@
   .btn:hover{
     @apply bg-[#fff] text-[#1e1e1e];
   }
+  .btn_red {
+    @apply py-[1rem] px-[3rem] flex items-center justify-center text-base bg-[#0A0D12] text-white rounded-lg text-[1.25rem] transition-all duration-500;
+  }
+  .btn_red:hover{
+    @apply bg-[#fff] text-[#1e1e1e];
+  }
   .btn_light {
     @apply py-[1rem] px-[3rem] h-[66px] flex items-center justify-center text-base bg-white text-[#101010] rounded-lg text-[1.25rem] transition-all duration-500;
   }
@@ -98,7 +104,7 @@
   }
 
   .card {
-    @apply flex flex-col max-w-[28rem] gap-y-2 bg-gray-100 p-8 rounded-lg;
+    @apply flex flex-col max-w-[28rem] gap-y-2 bg-gray-100 p-8 rounded-lg shadow-lg;
   }
 
   .card-image {
@@ -117,7 +123,7 @@
     @apply bg-gray-50 rounded-lg
   }
   .card-services {
-    @apply flex flex-col lg:flex-row gap-x-8 lg:items-center p-8 shadow-md
+    @apply flex flex-col lg:flex-row gap-x-8 lg:items-center p-8 shadow-lg
   }
 
   .card-services img {
