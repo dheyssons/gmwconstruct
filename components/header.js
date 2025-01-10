@@ -62,7 +62,7 @@ export default function Header() {
         <motion.div variants={dropdown} initial="variantInit" whileInView="variantAnim" transition={transition1_s} className="max-w-max lg:flex-1 flex flex-row items-center gap-x-4 my-2">
           {/* LOGO */}
           <motion.a variants={dropdown} href="/" className="">
-            <img alt="" src="logo.png" className="h-16 w-auto"/>
+            <img alt="home" src="logo.png" className="h-16 w-auto"/>
           </motion.a>
           {/* INFO */}
           <motion.div variants={dropdown} className='flex flex-col'>
@@ -155,7 +155,7 @@ export default function Header() {
             </motion.div>
 
             {/* NOTRE TRAVAIL */}
-            <motion.a href="/portfolio" className="text-md/6 font-semibold text-gray-900">
+            <motion.a title='notre travail' href="/portfolio" className="text-md/6 font-semibold text-gray-900">
               Notre travail
             </motion.a>
             {/* <a href="contact" className="text-md/6 font-semibold text-gray-900">
@@ -171,10 +171,10 @@ export default function Header() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">GMW Construct SRL</span>
               <img
-                alt=""
+                alt="gmw_logo"
                 src="logo.png"
                 className="h-8 w-auto"
               />
@@ -191,10 +191,10 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a href="/" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                <a title='home' href="/" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                   Accueil
                 </a>
-                <Link onClick={() => setMobileMenuOpen(false)} href="#services" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                <Link title='nos services' onClick={() => setMobileMenuOpen(false)} href="#services" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                   Nos services
                 </Link>
 
@@ -216,7 +216,7 @@ export default function Header() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <a
+                <a title='portfolio'
                   href="/portfolio"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >

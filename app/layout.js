@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="scroll-smooth">
       <head>
+        <link rel="icon" href="logo.png"></link>
         <meta name="description" content="Construction et rénovations de toitures."></meta>
         <meta name="keywords" content="GMW, Construct, Construction, Roofing, Toiture"></meta>
       </head>
