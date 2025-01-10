@@ -26,7 +26,7 @@ import { motion } from 'framer-motion';
 
 import Link from 'next/link'
 
-import {ImInstagram, ImWhatsapp} from 'react-icons/im'
+import {ImWhatsapp} from 'react-icons/im'
 
 //ASSURANCE
 import { AiOutlineFileDone } from "react-icons/ai";
@@ -84,75 +84,88 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" color='#ffffff' className="size-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12 items-center">
-          <div className='flex flex-row gap-x-2'>
-            <PhoneIcon className='size-7' />
-            <h5 className='h5'>471 55 55 40</h5>
-          </div>
-
-          <a href="/" className="text-md/6 font-semibold text-gray-900">
-            Accueil
-          </  a>
-          
-          < Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900">
-            Pourquoi nous?
-              <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
-            </PopoverButton>
-
-            <PopoverPanel
-              transition
-              className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-            >
-              <div className="p-4">
-                {services.map((item) => (
-                  <div
-                    key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-md/6"
-                  >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50">
-                      <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-red-600" />
-                    </div>
-                    <div className="flex-auto">
-                      <a className="block font-semibold text-gray-900">
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
+        <motion.div variants={dropdown} whileInView="variantAnim" transition={transition1_s}>
+          <PopoverGroup className="hidden lg:flex lg:gap-x-12 items-center">
+            {/* PHONE NUMBER */}
+            <motion.div>
+              <div className='flex flex-row gap-x-2'>
+                <PhoneIcon className='size-7' />
+                <h5 className='h5'>471 55 55 40</h5>
               </div>
-              <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
-                {callsToAction.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    target='_blank'
-                    className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
-                  >
-                    <item.icon aria-hidden="true" className="size-5 flex-none text-gray-400" />
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-            </PopoverPanel>
-          </Popover>
+            </motion.div>
 
-          <Link href="#services" className="text-md/6 font-semibold text-gray-900">
-            Nos services
-          </Link>
+            {/* ACCUEIL */}
+            <motion.a href="/" className="text-md/6 font-semibold text-gray-900">
+              Accueil
+            </motion.a>
+            
+            {/* POURQUOI NOUS */}
+            < Popover className="relative">
+              <motion.div>
+                <PopoverButton className="flex items-center gap-x-1 text-md/6 font-semibold text-gray-900">
+                Pourquoi nous?
+                  <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
+                </PopoverButton>
+              </motion.div>
 
-          <a href="/portfolio" className="text-md/6 font-semibold text-gray-900">
-            Notre travail
-          </a>
-          {/* <a href="contact" className="text-md/6 font-semibold text-gray-900">
-            Contact
-          </a> */}
-          {/* <a href="#" className="text-md/6 font-semibold text-gray-900">
-            À propos de nous
-           </a> */}
-        </PopoverGroup>
+              <PopoverPanel
+                transition
+                className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+              >
+                <div className="p-4">
+                  {services.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-md/6"
+                    >
+                      <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50">
+                        <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-red-600" />
+                      </div>
+                      <div className="flex-auto">
+                        <a className="block font-semibold text-gray-900">
+                          {item.name}
+                          <span className="absolute inset-0" />
+                        </a>
+                        <p className="mt-1 text-gray-600">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+                  {callsToAction.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      target='_blank'
+                      className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
+                    >
+                      <item.icon aria-hidden="true" className="size-5 flex-none text-gray-400" />
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </PopoverPanel>
+            </Popover>
+
+            {/* NOS SERVICES */}
+            <motion.div>
+              <Link href="#services" className="text-md/6 font-semibold text-gray-900">
+                Nos services
+              </Link>
+            </motion.div>
+
+            {/* NOTRE TRAVAIL */}
+            <motion.a href="/portfolio" className="text-md/6 font-semibold text-gray-900">
+              Notre travail
+            </motion.a>
+            {/* <a href="contact" className="text-md/6 font-semibold text-gray-900">
+              Contact
+            </a> */}
+            {/* <a href="#" className="text-md/6 font-semibold text-gray-900">
+              À propos de nous
+            </a> */}
+          </PopoverGroup>
+        </motion.div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
