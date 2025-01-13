@@ -52,7 +52,7 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<p className={`${archivo.className} p small self-center text-center m-[1rem]`}>© 2024 - GMW Construct SRL</p>
+				<p className={`${archivo.className} p small self-center text-center m-[1rem]`}>© 2025 - GMW Construct SRL</p>
 			</div>
 		</footer>
     )
