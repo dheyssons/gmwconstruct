@@ -5,6 +5,8 @@ import Header from "@/components/header"
 //IMPORT FOOTER
 import Footer from "@/components/footer";
 
+import { Analytics } from "@vercel/analytics/react"
+
 //FONT IMPORT
 import localFont from 'next/font/local';
 const archivo = localFont({
@@ -29,6 +31,7 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content="GMW, Construct, Construction, Roofing, Toiture"></meta>
       </head>
       <body className={`${archivo.variable} antialiased`}>
+        <Analytics/>
         <Header></Header>
         {children}
         <Footer></Footer>
