@@ -3,6 +3,8 @@ import { transition1 } from '@/public/transitions/transition1';
 import { righttoleft } from '@/public/variants/righttoleft';
 import { lefttoright } from '@/public/variants/lefttoright';
 import { FaRegCheckCircle } from "react-icons/fa";
+import { upward } from '@/public/variants/upward';
+import { transition1_s } from '@/public/transitions/transition1_s';
 
 
 export default function OurServices() {
@@ -12,10 +14,10 @@ export default function OurServices() {
             <motion.h2 variants={lefttoright} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h1'>Nos services</motion.h2>
           </div>
 
-          <div className='wrapper-services'>
+          <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" transition={transition1_s} className='wrapper-services'>
 
             {/* bardage */}
-            <div className='card-services'>
+            <motion.div variants={upward} className='card-services'>
                 <img className='image-services' alt='bardage' src="images/services/bardage.webp"></img>
                 {/* text */}
                 <div className='flex flex-col gap-y-8 justify-around'>
@@ -48,10 +50,10 @@ export default function OurServices() {
                       </li>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Charpente */}
-            <div className='card-services'>
+            <motion.div variants={upward} className='card-services'>
               <img className='image-services' alt='charpenter' src='images/services/charpenter.webp'></img>
               {/* text */}
               <div className='flex flex-col gap-y-8 justify-around'>
@@ -85,10 +87,10 @@ export default function OurServices() {
                 </div>
               </div>
 
-            </div>
+            </motion.div>
 
             {/* Couverture */}
-            <div className='card-services'>
+            <motion.div variants={upward} className='card-services'>
               <img className='image-services' alt='couverture' src='images/services/couverture.png'></img>
               {/* text */}
               <div className='flex flex-col gap-y-8 justify-around'>
@@ -121,10 +123,10 @@ export default function OurServices() {
                       </li>
                     </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Plateforme */}
-            <div className='card-services'>
+            <motion.div variants={upward} className='card-services'>
               <img className='image-services' alt='plateforme' src='images/services/plateforme.webp'></img>
               {/* text */}
               <div className='flex flex-col gap-y-8 justify-around'>
@@ -158,10 +160,10 @@ export default function OurServices() {
                     </div>
               </div>
 
-            </div>
+            </motion.div>
 
             {/* renovation */}
-            <div className='card-services'>
+            <motion.div variants={upward} className='card-services'>
               <img className='image-services' alt='renovation' src='images/services/renovation.png'></img>
               <div className='flex flex-col gap-y-8 justify-around'>
                 <div>
@@ -192,10 +194,10 @@ export default function OurServices() {
                       </li>
                     </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* zinguerie */}
-            <div className='card-services'>
+            <motion.div variants={upward} className='card-services'>
               <img className='image-services' alt='zinguerie' src='images/services/zinguerie.webp'></img>
               {/* text */}
               <div className='flex flex-col gap-y-8 justify-around'>
@@ -227,8 +229,8 @@ export default function OurServices() {
                       </li>
                     </div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
     )
 }
