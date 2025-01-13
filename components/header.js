@@ -95,7 +95,7 @@ export default function Header() {
             </motion.div>
 
             {/* ACCUEIL */}
-            <motion.a href="/" className="text-md/6 font-semibold text-gray-900">
+            <motion.a href="/" title='Accueil' className="text-md/6 font-semibold text-gray-900">
               Accueil
             </motion.a>
             
@@ -149,13 +149,13 @@ export default function Header() {
 
             {/* NOS SERVICES */}
             <motion.div>
-              <Link href="#services" className="text-md/6 font-semibold text-gray-900">
+              <Link href="#services" title='Notre Services' className="text-md/6 font-semibold text-gray-900">
                 Nos services
               </Link>
             </motion.div>
 
             {/* NOTRE TRAVAIL */}
-            <motion.a title='notre travail' href="/portfolio" className="text-md/6 font-semibold text-gray-900">
+            <motion.a title='Notre Travail' href="/portfolio" className="text-md/6 font-semibold text-gray-900">
               Notre travail
             </motion.a>
             {/* <a href="contact" className="text-md/6 font-semibold text-gray-900">

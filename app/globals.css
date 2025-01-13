@@ -127,7 +127,7 @@
   }
 
   .image-services {
-    @apply w-full max-w-[32rem] rounded-lg
+    @apply h-full max-h-[32rem] w-full max-w-[32rem] rounded-lg
   }
 
   .wrapper-benefits {
