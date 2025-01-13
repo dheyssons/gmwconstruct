@@ -43,14 +43,14 @@ import { transition1_s } from '@/public/transitions/transition1_s';
 
 
 const services = [
-  { name: 'Assurance', description: "We offer a 10-year warranty on our work", href: '#', icon: AiOutlineFileDone },
-  { name: 'Integrity', description: 'Always working with integrity in order to develop a good customer-company relationship', href: '#', icon: BiCheckShield },
-  { name: 'Excellence', description: '+10 years of experience in roofing to deliver excellent work to you', href: '#', icon: MdOutlineWorkspacePremium },
-  { name: 'Great customer service', description: 'A 24/7 customer service to clear up any of your doubts', href: '#', icon: PhoneIcon },
+  { name: 'Assurance', description: "Nous offrons une garantie de 10 ans sur notre travail", href: '#', icon: AiOutlineFileDone },
+  { name: 'Intégrité', description: 'Toujours travailler avec intégrité afin de développer une bonne relation client-entreprise', href: '#', icon: BiCheckShield },
+  { name: 'Excellence', description: "Plus de 10 ans d'expérience en couverture pour vous fournir un travail d'excellence", href: '#', icon: MdOutlineWorkspacePremium },
+  { name: 'Un excellent service client', description: 'Un service client disponible 24h/24 et 7j/7 pour répondre à toutes vos questions', href: '#', icon: PhoneIcon },
 ]
 const callsToAction = [
-  { name: 'Visit Our Instagram', href: 'https://www.instagram.com/gmwconstructsrl/', icon: ArrowRightStartOnRectangleIcon },
-  { name: 'Get Free An Estimate', href: 'https://api.whatsapp.com/send?phone=32471555540', icon: ImWhatsapp },
+  { name: 'Visitez Notre Instagram', href: 'https://www.instagram.com/gmwconstructsrl/', icon: ArrowRightStartOnRectangleIcon },
+  { name: 'Obtenez Un Devis Gratuit', href: 'https://api.whatsapp.com/send?phone=32471555540', icon: ImWhatsapp },
 ]
 
 export default function Header() {
@@ -68,8 +68,8 @@ export default function Header() {
           <motion.div variants={dropdown} className='flex flex-col'>
             <p className='text-[#ffffffe1] lg:text-black p small'>TVA BE 1003.984.048</p>
             <p className='text-[#ffffffe1] lg:text-black p small hidden lg:flex'>Lindestraat 42 Sint-Genesius-Rode 1640</p>
-            <div className='flex flex-row gap-x-1 lg:hidden'>
-              <PhoneIcon className='size-5 text-[#ffffff]'/>
+            <div className='flex flex-row items-center gap-x-1 lg:hidden'>
+              <PhoneIcon className='size-4 text-[#ffffffcc]'/>
               <p className='text-[#ffffffe1] lg:text-black p small'> 471 55 55 40</p>
             </div>
           </motion.div>
@@ -176,7 +176,7 @@ export default function Header() {
               <img
                 alt="gmw_logo"
                 src="logo.png"
-                className="h-8 w-auto"
+                className="h-16 w-auto"
               />
             </a>
             <button
@@ -211,7 +211,10 @@ export default function Header() {
                         href={item.href}
                         className="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
                       >
-                        {item.name}
+                        <div className='flex flex-row gap-x-2'>
+                          <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-red-600" />
+                          {item.name}
+                        </div>
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>

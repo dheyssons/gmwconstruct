@@ -21,10 +21,10 @@
     @apply text-[#141414] text-[2rem] md:text-[4rem] font-bold leading-[120%];
   }
   .h3 {
-    @apply text-[#141414] text-[1.5rem] lg:text-[3rem] font-bold leading-[120%];
+    @apply text-[#141414] text-[2rem] lg:text-[3rem] font-bold leading-[120%];
   }
   .h4 {
-    @apply text-[#141414] text-[2rem] md:text-[3rem] font-bold leading-[120%];
+    @apply text-[#141414] text-[2rem] md:text-[2.5rem] font-bold leading-[120%];
   }
   .h5 {
     @apply text-[#141414] text-[1rem] lg:text-[1.5rem] font-bold leading-[120%];
@@ -84,7 +84,7 @@
     @apply hover:text-[#000000cc] text-[1rem] md:text-[1.2rem] font-[600] transition-all duration-500;
   }
   .grid-images {
-    @apply flex flex-row flex-wrap gap-4 justify-center;
+    @apply grid grid-flow-col lg:grid-flow-row grid-cols-2 lg:grid-cols-4 grid-rows-2 lg:grid-rows-1 gap-2 lg:gap-4 justify-center;
   }
 
   .wrapper-image {
@@ -92,7 +92,7 @@
   }
 
   .wrapper-image img {
-    @apply w-full max-w-80
+    @apply w-44 lg:w-full max-w-80
   }
 
   .img__zoom{
@@ -116,22 +116,22 @@
   }
 
   .wrapper-services {
-    @apply flex flex-col flex-wrap justify-center gap-y-20;
+    @apply flex flex-row flex-wrap justify-center gap-8 lg:gap-y-20;
   }
 
-  .wrapper-services .card-services:nth-child(odd) {
+  /* .wrapper-services .card-services:nth-child(odd) {
     @apply bg-gray-50 rounded-lg
-  }
+  } */
   .card-services {
-    @apply flex flex-col lg:flex-row gap-x-8 lg:items-center p-8 shadow-lg
+    @apply flex flex-col w-full max-w-[28rem] gap-8 lg:items-center p-8 shadow-lg
   }
 
-  .card-services img {
-    @apply w-[20rem] md:w-full max-w-[38rem] object-cover rounded-lg
+  .image-services {
+    @apply w-full max-w-[32rem] rounded-lg
   }
 
   .wrapper-benefits {
-    @apply flex flex-col gap-y-4;
+    @apply flex flex-col gap-y-2;
   }
   .wrapper-benefits li {
     @apply list-none flex flex-row gap-x-3
