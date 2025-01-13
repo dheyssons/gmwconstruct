@@ -60,7 +60,7 @@ export default function OurServices() {
                 {/* title */}
                 <div>
                   <div className='overflow-hidden max-w-max'>
-                    <motion.h4 variants={lefttoright} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h4'>Charpente</motion.h4>
+                    <motion.h4 variants={righttoleft} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h4'>Charpente</motion.h4>
                   </div>  
                   <p className='p small'>La charpente est l'élément clé qui garantit la solidité et la stabilité de votre toiture. Conçue pour supporter le poids du toit et résister aux intempéries, elle joue un rôle essentiel dans la construction ou la rénovation de tout type de bâtiment.</p>
                 </div>
@@ -133,7 +133,7 @@ export default function OurServices() {
                 {/* title */}
                 <div>
                   <div className='overflow-hidden max-w-max'>
-                    <motion.h4 variants={lefttoright} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h4'>Plateforme</motion.h4>
+                    <motion.h4 variants={righttoleft} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h4'>Plateforme</motion.h4>
                   </div>
                   <p className='p small'>La plateforme représente une solution architecturale moderne, qu'il s'agisse d'un toit plat ou d'une structure horizontale conçue pour divers usages. Ce type de conception offre à la fois esthétisme, fonctionnalité et flexibilité pour répondre aux besoins des constructions contemporaines.</p>
                 </div>
@@ -203,7 +203,7 @@ export default function OurServices() {
               <div className='flex flex-col gap-y-8 justify-around'>
                 <div>
                   <div className='overflow-hidden max-w-max'>
-                    <motion.h4 variants={lefttoright} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h4'>Zinguerie</motion.h4>
+                    <motion.h4 variants={righttoleft} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h4'>Zinguerie</motion.h4>
                   </div>
                   <p className='p small'>La zinguerie est essentielle pour maintenir la protection et la fonctionnalité de votre bâtiment. Alliant technique et durabilité, nos services de zinguerie garantissent un écoulement efficace des eaux pluviales et préviennent les infiltrations susceptibles de compromettre la structure du bâtiment.</p>
                 </div>
