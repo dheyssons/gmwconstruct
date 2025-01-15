@@ -73,7 +73,7 @@ export default function Home() {
               <motion.p variants={item} className="text-[1.3rem] drop-shadow-2xl text-[#ffffffed] lg:text-[#ffffff] leading-6">Bâtir la confiance, un toit à la fois.</motion.p>
           </div>
           <div className='flex flex-col gap-y-2'>
-           <motion.h3 className='h4 !text-white uppercase [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]' variants={item}>Obtenez Un <br/> Devis Gratuit</motion.h3>
+           <motion.h3 className='h4 !text-white uppercase [text-shadow:_0_3px_0_rgb(0_0_0_/_40%)]' variants={item}>Obtenir Un <br/> Devis Gratuit</motion.h3>
             <a className="btn max-w-max" href="#contactus">CONTACTEZ-NOUS</a>
           </div>
         </motion.div>

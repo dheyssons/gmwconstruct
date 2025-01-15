@@ -50,7 +50,7 @@ const services = [
 ]
 const callsToAction = [
   { name: 'Visitez Notre Instagram', href: 'https://www.instagram.com/gmwconstructsrl/', icon: ArrowRightStartOnRectangleIcon },
-  { name: 'Obtenez Un Devis Gratuit', href: 'https://api.whatsapp.com/send?phone=32471555540', icon: ImWhatsapp },
+  { name: 'Obtenir Un Devis Gratuit', href: 'https://api.whatsapp.com/send?phone=32471555540', icon: ImWhatsapp },
 ]
 
 export default function Header() {
