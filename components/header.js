@@ -149,15 +149,18 @@ export default function Header() {
 
             {/* NOS SERVICES */}
             <motion.div>
+              <a className='hidden' title='Services' href='/'></a>
               <Link href="#services" title='Notre Services' className="text-md/6 font-semibold text-gray-900">
                 Nos services
               </Link>
             </motion.div>
 
             {/* NOTRE TRAVAIL */}
-            <motion.a title='Notre Travail' href="/portfolio" className="text-md/6 font-semibold text-gray-900">
-              Notre travail
-            </motion.a>
+            <li>
+              <motion.a title='Notre Travail' href="/portfolio" className="text-md/6 font-semibold text-gray-900">
+                Notre travail
+              </motion.a>
+            </li>
             {/* <a href="contact" className="text-md/6 font-semibold text-gray-900">
               Contact
             </a> */}

@@ -66,7 +66,7 @@ export default function Home() {
     <section className="section flex flex-col gap-y-10 lg:gap-y-20">
       <div className="banner flex flex-col w-full h-screen items-start relative">
         {/* title */}
-        <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1_s} className="mt-44 lg:mt-52 mx-12 lg:mx-0 flex flex-col gap-y-12 lg:flex-row w-full justify-around">
+        <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1_s} className="mt-44 lg:mt-52 mx-12 lg:mx-0 flex flex-col gap-y-20 lg:flex-row w-full justify-around">
           <div className='flex flex-col lg:gap-y-2 mr-40'>
             {/* TITLE */}
               <motion.h1 variants={item} className="h1 drop-shadow-2xl text-white lg:text-[#ffffff] !leading-10 pb-2">GMW Construct</motion.h1>
