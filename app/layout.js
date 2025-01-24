@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Construction et rénovations de toitures."></meta>
         <meta name="keywords" content="GMW, Construct, Construction, Roofing, Toiture"></meta>
       </head>
+      <meta name="google-site-verification" content="HNdQz7w1myir7wQlHPbwgyzpYuO7DXgFVninTdBpG0M" />
       <body className={`${archivo.variable} antialiased`}>
         <Header></Header>
         {children}
