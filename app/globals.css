@@ -139,3 +139,7 @@
   .wrapper-benefits li div {
     @apply flex items-center
   }
+
+  li {
+    @apply list-none
+  }
