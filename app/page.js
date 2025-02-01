@@ -67,7 +67,7 @@ export default function Home() {
       <div className="banner flex flex-col w-full h-screen items-start relative">
         {/* title */}
         <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1_s} className="mt-44 lg:mt-52 mx-12 lg:mx-0 flex flex-col">
-          <div className='flex flex-col lg:gap-y-20 ml-20'>
+          <div className='flex flex-col gap-y-20 lg:gap-y-20 lg:ml-20'>
               {/* TITLE */}
               <div>
                 <motion.h1 variants={item} className="h1 drop-shadow-2xl text-white lg:text-[#ffffff] !leading-10 pb-2">GMW Construct</motion.h1>
@@ -86,24 +86,24 @@ export default function Home() {
         {/* ABOUT US */}
         <div className='container mx-auto flex flex-col items-center gap-y-1'>
           <div className='flex flex-row items-center gap-10 lg:gap-y-20'>
-            {/* image */}
-            <img alt='' className='max-w-[36rem] rounded-lg hidden md:flex' src='images/fixroof.jpg'></img>
             {/* texts */}
-            <div className='flex flex-col gap-y-16'>
-              <div className='flex flex-col gap-y-8'>
-                <div>
-                  <div className='overflow-hidden'>
+            <div className='flex flex-col gap-y-16 items-center'>
+              <div className='flex flex-col gap-y-8 items-center '>
+                <div className='flex flex-col gap-y-2 items-center lg:items-start'>
+                  <div>
                     <motion.h3
                     variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1}  
                     className='h3'>À propos de nous</motion.h3>
                   </div>
-                  <h6 className='h6'>"Protection, qualité et valorisation pour votre propriété!</h6>
+                  <h6 className='h6 text-center'>"Protection, qualité et valorisation pour votre propriété!</h6>
                 </div>
-                <p className='p md:large w-[18rem] md:w-[20rem] lg:w-[32rem]'>
+                <p className='p md:large w-[20rem] md:w-[20rem] lg:w-[32rem]'>
                 Chez GMW Construct, nous offrons des solutions de toiture alliant efficacité et durabilité. Forts de plusieurs années d'expérience, nous garantissons la protection de votre maison ou de votre entreprise tout en augmentant sa valeur. Que ce soit pour un projet résidentiel ou commercial, vous pouvez compter sur notre expertise et notre engagement à chaque étape. Contactez-nous dès aujourd’hui pour trouver la solution idéale pour votre projet !"</p>
               </div>
-              <a className="btn max-w-max" href="#contactus">OBTENIR UN DEVIS GRATUIT</a>
+              <a className="btn max-w-max lg:self-start" href="/contact">OBTENIR UN DEVIS GRATUIT</a>
             </div>
+            {/* image */}
+            <img alt='' className='max-w-[36rem] rounded-lg hidden md:flex' src='images/fixroof.jpg'></img>
           </div>
 
         </div>
@@ -363,7 +363,7 @@ export default function Home() {
         </div>
 
         {/* CONTACT US */}
-        <div id='contactus' className='container mx-auto flex flex-col items-center gap-y-8'>
+         <div id='contactus' className='container mx-auto flex flex-col items-center gap-y-8'>
           <div className=''>
             <motion.h3 variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h3 lg:mt-40'>Contactez-nous sans engagement</motion.h3>
           </div>

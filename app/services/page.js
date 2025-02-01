@@ -56,9 +56,9 @@ export default function OurServices() {
 
     return (
         <section>
-            <div className='container mx-auto flex flex-col items-center gap-y-8 lg:gap-y-20'>
+            <div className='container mx-auto flex flex-col items-center gap-y-10 lg:gap-y-20'>
                 <div className='overflow-hidden max-w-max lg:mt-40'>
-                    <motion.h2 variants={lefttoright} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h1'>Nos services</motion.h2>
+                    <motion.h2 variants={lefttoright} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h1 mt-40'>Nos services</motion.h2>
                 </div>
 
                 <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1_s} className='wrapper-services'>
@@ -278,12 +278,12 @@ export default function OurServices() {
                 </motion.div>
                 </motion.div>
             </div>
-             <div id='contactus' className='container mx-auto flex flex-col items-center gap-y-8'>
-                      <div className=''>
-                        <motion.h3 variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h3 lg:mt-40'>Contactez-nous sans engagement</motion.h3>
-                      </div>
+             <div id='contactus' className=' flex flex-col items-center gap-y-8'>
+                <div>
+                    <motion.h3 variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h3 text-center mt-20 lg:mt-40'>Contactez-nous sans engagement</motion.h3>
+                </div>
             
-                      <div className='flex flex-row gap-x-12 w-full justify-evenly'>
+                <div className='flex flex-row gap-x-12 w-full justify-evenly'>
                       {/* FORM */}
                         <motion.form variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1_s} onSubmit={handleSubmit} className="w-80 lg:w-full lg:max-w-md flex flex-col items-center">
                           <motion.div variants={item} className="relative z-0 w-full mb-5 group">
@@ -328,11 +328,10 @@ export default function OurServices() {
                               </div>
                             </div>
                         </div> */}
-                      </div>
+                </div>
             
-                      <div className='line'></div>
-            
-                    </div>
+                <div className='line'></div>
+            </div>
         </section>
     )
 }

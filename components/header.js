@@ -196,9 +196,9 @@ export default function Header() {
                 <a title='home' href="/" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                   Accueil
                 </a>
-                <Link title='nos services' onClick={() => setMobileMenuOpen(false)} href="#services" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                <a title='nos services' onClick={() => setMobileMenuOpen(false)} href="/services" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                   Nos services
-                </Link>
+                </a>
 
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">

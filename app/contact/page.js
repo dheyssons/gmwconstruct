@@ -54,7 +54,7 @@ export default function Contact() {
     return (
         <div id='contactus' className='container mx-auto flex flex-col items-center gap-y-8'>
           <div className=''>
-            <motion.h3 variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h3 lg:mt-40'>Contactez-nous sans engagement</motion.h3>
+            <motion.h3 variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h3 text-center mt-40'>Contactez-nous sans engagement</motion.h3>
           </div>
 
           <div className='flex flex-row gap-x-12 w-full justify-evenly'>
