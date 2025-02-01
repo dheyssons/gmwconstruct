@@ -39,7 +39,7 @@ export default function Footer() {
 											<ImMail2 className='mr-2' />Email</a>
 										</li>
 										<li className='flex flex-row items-center'>
-											<a className="social_link btn" href="https://www.instagram.com/gmwconstructsrl/" target='_blank'>
+											<a className="social_link btn" href="https://www.instagram.com/gmwconstruct/" target='_blank'>
 											<ImInstagram className='mr-2' />Instagram</a>
 										</li>
 										<li className='flex flex-row items-center'>

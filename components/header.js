@@ -13,12 +13,7 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
@@ -49,7 +44,7 @@ const services = [
   { name: 'Un excellent service client', description: 'Un service client disponible 24h/24 et 7j/7 pour répondre à toutes vos questions', href: '#', icon: PhoneIcon },
 ]
 const callsToAction = [
-  { name: 'Visitez Notre Instagram', href: 'https://www.instagram.com/gmwconstructsrl/', icon: ArrowRightStartOnRectangleIcon },
+  { name: 'Visitez Notre Instagram', href: 'https://www.instagram.com/gmwconstruct/', icon: ArrowRightStartOnRectangleIcon },
   { name: 'Obtenir Un Devis Gratuit', href: 'https://api.whatsapp.com/send?phone=32471555540', icon: ImWhatsapp },
 ]
 
@@ -59,7 +54,7 @@ export default function Header() {
     return (
       <header className="z-10 fixed w-full bg-black lg:bg-white">
       <nav aria-label="Global" className="flex flex-row items-center justify-around">
-        <motion.div variants={dropdown} initial="variantInit" whileInView="variantAnim" transition={transition1_s} className="max-w-max lg:flex-1 flex flex-row items-center gap-x-4 my-2">
+        <motion.div variants={dropdown} initial="variantInit" whileInView="variantAnim" viewport={{once:true}} transition={transition1_s} className="max-w-max lg:flex-1 flex flex-row items-center gap-x-4 my-2">
           {/* LOGO */}
           <motion.a variants={dropdown} href="/" className="">
             <img alt="home" src="logo.png" className="h-16 w-auto"/>
@@ -84,7 +79,7 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" color='#ffffff' className="size-6" />
           </button>
         </div>
-        <motion.div variants={dropdown} whileInView="variantAnim" transition={transition1_s}>
+        <motion.div variants={dropdown} whileInView="variantAnim" viewport={{once:true}} transition={transition1_s}>
           <PopoverGroup className="hidden lg:flex lg:gap-x-12 items-center">
             {/* PHONE NUMBER */}
             <motion.div>
@@ -95,9 +90,11 @@ export default function Header() {
             </motion.div>
 
             {/* ACCUEIL */}
-            <motion.a href="/" title='Accueil' className="text-md/6 font-semibold text-gray-900">
-              Accueil
-            </motion.a>
+            <li>
+              <a href="/" title='Accueil' className="text-md/6 font-semibold text-gray-900">
+                Accueil
+              </a>
+            </li>
             
             {/* POURQUOI NOUS */}
             < Popover className="relative">
@@ -148,22 +145,24 @@ export default function Header() {
             </Popover>
 
             {/* NOS SERVICES */}
-            <motion.div>
-              <a className='hidden' title='Services' href='/'></a>
-              <Link href="#services" title='Notre Services' className="text-md/6 font-semibold text-gray-900">
+            <li>
+              <a href="/services" title='Notre Services' className="text-md/6 font-semibold text-gray-900">
                 Nos services
-              </Link>
-            </motion.div>
+              </a>
+            </li>
 
             {/* NOTRE TRAVAIL */}
             <li>
-              <motion.a title='Notre Travail' href="/portfolio" className="text-md/6 font-semibold text-gray-900">
+              <a title='Notre Travail' href="/portfolio" className="text-md/6 font-semibold text-gray-900">
                 Notre travail
-              </motion.a>
+              </a>
             </li>
-            {/* <a href="contact" className="text-md/6 font-semibold text-gray-900">
-              Contact
-            </a> */}
+            {/* CONTACT */}
+            <li>
+              <a title='Contact' href="/contact" className="text-md/6 font-semibold text-gray-900">
+                Contact
+              </a>
+            </li>
             {/* <a href="#" className="text-md/6 font-semibold text-gray-900">
               À propos de nous
             </a> */}
