@@ -82,7 +82,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <div className='flex flex-col gap-y-10 lg:gap-y-20 py-4 lg:py-8'>
+      <div className='flex flex-col gap-y-10 lg:gap-y-32 py-4 lg:py-8'>
         {/* ABOUT US */}
         <div className='container mx-auto flex flex-col items-center gap-y-1'>
           <div className='flex flex-row items-center gap-10 lg:gap-y-20'>
