@@ -62,7 +62,7 @@
   }
   
   .btn {
-    @apply py-[1rem] px-[3rem] flex items-center justify-center text-base text-white rounded-lg text-[1.25rem] transition-all duration-500 bg-[#921818] bg-gradient-to-r from-[#c12c2c] to-transparent to-70%;
+    @apply py-[1rem] px-[3rem] flex items-center justify-center text-base text-white rounded-sm text-[1.25rem] transition-all duration-500 bg-[#921818] bg-gradient-to-r from-[#c12c2c] to-transparent to-70%;
   }
   .btn:hover{
     @apply bg-[#d52f2f] text-white;
@@ -123,13 +123,13 @@
     @apply bg-gray-50 rounded-lg
   } */
   .card-services {
-    @apply flex flex-col w-full max-w-[28rem] gap-8 lg:items-center p-8 shadow-lg
+    @apply flex flex-col w-full max-w-[28rem] gap-8 lg:items-center px-16 lg:px-16 py-8  shadow-lg
   }
   .image-services {
     @apply h-[16rem] w-full max-w-[28rem] rounded-lg
   }
   .wrapper-benefits {
-    @apply flex flex-col gap-y-2;
+    @apply flex-col gap-y-4;
   }
   .wrapper-benefits li {
     @apply list-none flex flex-row gap-x-3
@@ -139,4 +139,22 @@
   }
   li {
     @apply list-none
+  }
+
+  @media (max-width: 768px) {
+    #parallax-header {
+      animation: parallax-header linear forwards;
+      animation-timeline: scroll();
+      animation-range: 0vh 20vh;
+    }
+
+   }
+  
+  @keyframes parallax-header {
+    from {
+      height: 3rem;
+    } to {
+      height: 5rem;
+      background-color: #121212;
+    }
   }

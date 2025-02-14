@@ -56,13 +56,13 @@ export default function Contact() {
       }
 
     return (
-        <div id='contactus' className='container mx-auto flex flex-col items-center gap-y-8'>
-          <div className='flex flex-row gap-x-8 mt-40'>
+        <div id='contactus' className='container mx-auto flex flex-col items-center gap-y-8 overflow-hidden'>
+          <div className='flex flex-col lg:flex-row gap-x-8 gap-y-8 mt-40'>
             {/* FORMULAIRE */}
             <div className='flex flex-col gap-y-14'>
               <div className=''>
                 <motion.h3 variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h3 text-center !text-[#c12c2c]'>Contactez-nous </motion.h3>
-                <h3 className='h3'>sans engagement</h3>
+                <h3 className='h3 text-center'>sans engagement</h3>
               </div>
 
               <div className='flex flex-row gap-x-12 w-full justify-evenly'>
@@ -114,7 +114,7 @@ export default function Contact() {
             </div>
 
             {/* OTHER INFOS */}
-            <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className="text-white flex flex-col gap-y-16 p-12 lg:p-20 bg-[#151515] rounded-lg">
+            <motion.div variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className="text-white flex flex-col gap-y-16 p-12 lg:p-20 bg-[#151515] lg:rounded-lg">
               <div className="flex flex-col justify-center gap-y-2">
                   <div className='flex flex-row overflow-hidden'>
                       <h2 className="h2 !text-white">Contact</h2>
