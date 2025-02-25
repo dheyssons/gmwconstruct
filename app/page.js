@@ -25,6 +25,8 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import Carousel from '@/components/carousel';
 import CarouselMobile from '@/components/carouselmobile';
 
+import JsonLd from '@/components/jsonld';
+
 
 export default function Home() {
 
@@ -511,6 +513,18 @@ export default function Home() {
     </div>
   ];
 
+  const jsonLdData = {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "GMW Construct",
+    "telephone": "471 55 55 40",
+    "email": "gmwconstruct@outlook.com",
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "1640"
+    }
+  };
+
   return (
     <section className="section flex flex-col gap-y-10 lg:gap-y-20">
       <div className="banner flex flex-col w-full h-screen items-start relative">
@@ -521,6 +535,7 @@ export default function Home() {
               <div>
                 <motion.h1 variants={item} className="h1 drop-shadow-2xl text-white lg:text-[#ffffff] !leading-10 pb-2">GMW Construct</motion.h1>
                 <motion.p variants={item} className="text-[1.3rem] drop-shadow-2xl text-[#ffffffed] lg:text-[#ffffff] leading-6">Bâtir la confiance, un toit à la fois.</motion.p>
+                <JsonLd data={jsonLdData}/>
               </div>
               {/* CALL TO ACTION  */}
               <div className='flex flex-col gap-y-2'>
