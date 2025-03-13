@@ -61,7 +61,7 @@ export default function Contact() {
             {/* FORMULAIRE */}
             <div className='flex flex-col gap-y-14'>
               <div className=''>
-                <motion.h3 variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h3 text-center !text-[#c12c2c]'>Contactez-nous </motion.h3>
+                <motion.h1 variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1} className='h3 text-center !text-[#c12c2c]'>Contactez-nous </motion.h1>
                 <h3 className='h3 text-center'>sans engagement</h3>
               </div>
 

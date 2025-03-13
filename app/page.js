@@ -517,7 +517,7 @@ export default function Home() {
     "@context": "http://schema.org",
     "@type": "LocalBusiness",
     "name": "GMW Construct",
-    "telephone": "471 55 55 40",
+    "telephone": "460 10 60 41",
     "email": "gmwconstruct@outlook.com",
     "address": {
       "@type": "PostalAddress",
@@ -557,12 +557,12 @@ export default function Home() {
                   <div>
                     <motion.h3
                     variants={upward} initial="variantInit" whileInView="variantAnim" viewport={{once: true}} transition={transition1}  
-                    className='h3'>À propos de nous</motion.h3>
+                    className='h2'>À propos de nous</motion.h3>
                   </div>
                   <h6 className='h6 text-center'>"Protection, qualité et valorisation pour votre propriété!</h6>
                 </div>
-                <p className='p md:large w-[20rem] md:w-[20rem] lg:w-[32rem]'>
-                Chez GMW Construct, nous offrons des solutions de toiture alliant efficacité et durabilité. Forts de plusieurs années d'expérience, nous garantissons la protection de votre maison ou de votre entreprise tout en augmentant sa valeur. Que ce soit pour un projet résidentiel ou commercial, vous pouvez compter sur notre expertise et notre engagement à chaque étape. Contactez-nous dès aujourd’hui pour trouver la solution idéale pour votre projet !"</p>
+                <p className='p md:large w-[20rem] md:w-[20rem] lg:w-[32rem] leading-8'>
+                GMW Construct propose des solutions de toiture alliant performance, durabilité et esthétique. Forts de plusieurs années d'expérience, nous protégeons votre maison ou votre entreprise tout en valorisant votre bien. Qu'il s'agisse d'un projet résidentiel ou commercial, notre expertise et notre engagement garantissent un travail de qualité, du diagnostic initial à la finition. Contactez-nous dès aujourd’hui pour une toiture fiable et durable!</p>
               </div>
               <a className="btn max-w-max lg:self-start" href="/contact">OBTENIR UN DEVIS GRATUIT</a>
             </div>

@@ -65,7 +65,7 @@ export default function Header() {
               <p className='text-white lg:text-[#121212] p small hidden lg:flex'>Lindestraat 42 Sint-Genesius-Rode 1640</p>
               <div className='flex flex-row items-center gap-x-1 lg:hidden'>
                 <PhoneIcon className='size-4 text-[#ffffff]'/>
-                <p className='text-white lg:text-[#121212] p small'> 471 55 55 40</p>
+                <p className='text-white lg:text-[#121212] p small'> 466 10 60 41</p>
               </div>
             </motion.div>
           </motion.div>
@@ -86,7 +86,7 @@ export default function Header() {
               <motion.div>
                 <div className='flex flex-row gap-x-2'>
                   <PhoneIcon className='size-7' />
-                  <h5 className='h5'>471 55 55 40</h5>
+                  <h5 className='h5'>466 10 60 41</h5>
                 </div>
               </motion.div>
 
