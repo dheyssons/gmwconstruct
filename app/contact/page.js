@@ -122,9 +122,9 @@ export default function Contact() {
                   <p className="p !text-white">Nous sommes là pour vous aider avec toutes vos questions ou tout support dont vous pourriez avoir besoin.</p>
               </div>
               <div className="flex flex-col justify-center gap-y-3">
-                  <a target="_blank" href="mailto:bresap@gmail.com" className="h6 flex flex-row items-center gap-x-2 opacity-90 hover:opacity-50 "><MdOutlineMail /> bresap.srv@gmail.com</a>  
-                  <a target="_blank" href="https://api.whatsapp.com/send?phone=32465580914" className="h6 flex flex-row items-center gap-x-2 opacity-90 hover:opacity-50"><ImWhatsapp />465 58 09 14</a>  
-                  <a target="_blank" href="https://maps.app.goo.gl/QohHCBALJ6q53rNv9" title="address" className="h6 flex flex-row items-center gap-x-2 opacity-90 hover:opacity-50"><FaMapMarkerAlt /> Blvd Auguste Reyers 45, 1030 Schaerbeek</a>  
+                  <a target="_blank" href="mailto:gmwconstruct@outlook.com" className="h6 flex flex-row items-center gap-x-2 opacity-90 hover:opacity-50 "><MdOutlineMail /> gmwconstruct@outlook.com</a>  
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=32466106041" className="h6 flex flex-row items-center gap-x-2 opacity-90 hover:opacity-50"><ImWhatsapp />466 10 60 41</a>  
+                  <a target="_blank" href="https://maps.app.goo.gl/QohHCBALJ6q53rNv9" title="address" className="h6 flex flex-row items-center gap-x-2 opacity-90 hover:opacity-50"><FaMapMarkerAlt /> Lindestraat 42 Sint-Genesius-Rode 1640</a>  
               </div> 
               </motion.div> 
           </div>
